@@ -1,0 +1,3 @@
+ [[container.copy.files]]
+sourceFile = "Config.toml"
+target = "/home/ballerina/Config.toml"

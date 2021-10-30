@@ -41,12 +41,11 @@ type Player record {
 
 
 
-configurable string footballDataHost = ?;
-configurable string apiKey = ?;
-configurable int servicePort = ?;
+configurable string footballDataHost = "http://api.football-data.org";
+configurable string apiKey = "your_api_key";
 
 
-service / on new http:Listener(servicePort) {
+service / on new http:Listener(8080) {
 	resource function get competition/[string competition]/teams() returns Team[]|error? {
 		
 		http:Client footballData = check new(footballDataHost);

@@ -11,6 +11,7 @@ org = "alex"
 name = "pick_the_team_fixtures"
 version = "0.1.0"
 dependencies = [
+	{org = "ballerina", name = "cloud"},
 	{org = "ballerina", name = "http"},
 	{org = "ballerinai", name = "observe"}
 ]
@@ -39,6 +40,14 @@ dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "task"},
 	{org = "ballerina", name = "time"}
+]
+
+[[package]]
+org = "ballerina"
+name = "cloud"
+version = "2.0.0-beta.3"
+modules = [
+	{org = "ballerina", packageName = "cloud", moduleName = "cloud"}
 ]
 
 [[package]]
